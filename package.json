@@ -1,0 +1,18 @@
+{
+  "name": "file-size-monitor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "file-size-monitor": "bin/file-size-monitor"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "find-up": "^3.0.0",
+    "minimist": "^1.2.0"
+  }
+}
