@@ -1,18 +1,14 @@
 {
-  "name": "file-size-monitor",
-  "version": "1.0.0",
-  "description": "",
+  "name": "make-cli-util",
+  "version": "0.0.1",
+  "description": "A CLI tool for creating new CLI tools",
   "main": "index.js",
   "bin": {
-    "file-size-monitor": "bin/file-size-monitor"
+    "make-cli-util": "bin/make-cli-util"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "find-up": "^3.0.0",
-    "minimist": "^1.2.0"
-  }
+  "license": "ISC"
 }
