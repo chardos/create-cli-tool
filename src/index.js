@@ -2,6 +2,7 @@ const fs = require('fs-extra');
 const makeDir = require('make-dir');
 const minimist = require('minimist');
 const indexTemplate = require('./templates/index');
+const packageTemplate = require('./templates/package');
 
 
 module.exports = async () => {
@@ -13,21 +14,20 @@ module.exports = async () => {
   const [name] = positionalArgs;
   
   const rootPath = `${process.cwd()}/${name}`;
-  const indexPath = `${rootPath}/index.js`;
+  const srcPath = `${rootPath}/src`;
+  const indexPath = `${rootPath}/src/index.js`;
+  const packagePath = `${rootPath}/package.json`;
   
-
-  // write to cwd
-  console.log('process.cwd()', process.cwd());
-
   //create the folder
-  await makeDir(rootPath);
+  await makeDir(srcPath);
   
   // Add index
   await fs.writeFile(indexPath, indexTemplate(name), (err) => {
-    if (err) {
-      throw new Error(err);
-    }
+    if (err) { throw new Error(err) };
   });
 
   // Add package.json
+  await fs.writeFile(packagePath, packageTemplate(name), (err) => {
+    if (err) { throw new Error(err) };
+  });
 };
