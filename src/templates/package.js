@@ -4,7 +4,7 @@ module.exports = (name) => {
       "name": "${name}",
       "version": "0.0.1",
       "bin": {
-        "${name}": "bin/${name}"
+        "${name}": "bin/main"
       }
     }
   `

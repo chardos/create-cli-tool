@@ -4,7 +4,7 @@
   "description": "A CLI tool for creating new CLI tools",
   "main": "index.js",
   "bin": {
-    "create-cli-tool": "bin/create-cli-tool"
+    "create-cli-tool": "bin/main"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
