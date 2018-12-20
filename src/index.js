@@ -5,7 +5,6 @@ const indexTemplate = require('./templates/index');
 const packageTemplate = require('./templates/package');
 const mainTemplate = require('./templates/main');
 
-
 module.exports = async () => {
   const args = minimist(process.argv.slice(2));
   const { 

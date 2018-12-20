@@ -1,5 +1,4 @@
-module.exports = `
-  #!/usr/bin/env node
+module.exports = `#!/usr/bin/env node
 
-  require('../src')()
+require('../src')()
 `

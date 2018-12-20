@@ -1,7 +1,8 @@
 module.exports = (name) => {
   return `
     module.exports = () => {
-      console.log('Success!');
+      console.log('Success! Running ${name}.');
     };
   `
 }
+
