@@ -6,10 +6,14 @@
   "bin": {
     "create-cli-tool": "bin/main"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/chardos/create-cli-tool.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Richard Tan",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^7.0.1",
