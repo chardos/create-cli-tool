@@ -1,6 +1,6 @@
 {
   "name": "create-cli-tool",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A CLI tool for creating new CLI tools",
   "main": "index.js",
   "bin": {
